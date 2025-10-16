@@ -1,0 +1,13 @@
+#define DEF_bitquantum_VERSION_TAG "@VERSIONTAG@"
+#define DEF_bitquantum_VERSION "8.0.3"
+#define DEF_bitquantum_RELEASE_NAME "Menger"
+#define DEF_bitquantum_VERSION_FULL DEF_bitquantum_VERSION "-" DEF_bitquantum_VERSION_TAG
+#define DEF_bitquantum_VERSION_IS_RELEASE @VERSION_IS_RELEASE@
+
+#include "version.h"
+
+const char* const bitquantum_VERSION_TAG = DEF_bitquantum_VERSION_TAG;
+const char* const bitquantum_VERSION = DEF_bitquantum_VERSION;
+const char* const bitquantum_RELEASE_NAME = DEF_bitquantum_RELEASE_NAME;
+const char* const bitquantum_VERSION_FULL = DEF_bitquantum_VERSION_FULL;
+const bool bitquantum_VERSION_IS_RELEASE = DEF_bitquantum_VERSION_IS_RELEASE;

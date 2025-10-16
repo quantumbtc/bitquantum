@@ -1,0 +1,20 @@
+[Unit]
+Description=bitquantum Full Node
+After=network.target
+
+[Service]
+User=bitquantum
+Group=bitquantum
+WorkingDirectory=~
+StateDirectory=bitquantum
+LogsDirectory=bitquantum
+
+Type=simple
+ExecStart=/usr/bin/bitquantumd --config-file /etc/bitquantumd.conf --non-interactive
+StandardOutput=null
+StandardError=null
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
